@@ -80,7 +80,8 @@ function handleCM(event) {
 function handleSaveClick() {
   const image = canvas.toDataURL("image/jpeg");
   const link = document.createElement("a");
-  link.download = image;
+  link.href = image;
+  link.download = "PaintJS[EXPORT]";
   link.click();
 }
 
